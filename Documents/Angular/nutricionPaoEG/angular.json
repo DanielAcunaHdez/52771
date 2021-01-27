@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "nutricionPaoEG"
+  "defaultProject": "nutricionPaoEG",
+  "cli": {
+    "analytics": "2c13035e-8009-431a-b6c1-ba5e82bbe3ee"
+  }
 }
