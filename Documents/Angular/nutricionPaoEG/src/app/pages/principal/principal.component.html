@@ -1,0 +1,137 @@
+<!-- Slider Start -->
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-xl-7">
+				<div class="block">
+					<div class="divider mb-3"></div>
+					<!-- <span class="text-uppercase text-sm letter-spacing ">Total Health care solution</span> -->
+					<h1 class="mb-3 mt-3">Acerca de mi</h1>
+					<div class="acerca-mi">
+					<p  class="mb-4 pr-5">Me dedico a la salud integral del paciente, a transmitir información esencial para prevenir y curar enfermedades causadas por una mala alimentación y malos hábitos alimenticios</p>
+                </div>
+                    <div class="btn-container ">
+						<a routerLink="/about"  class="btn btn-main-2 btn-icon btn-round-full">Ver más <i class="icofont-simple-right ml-2  "></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="feature-block d-lg-flex">
+
+					<div *ngFor ="let serv of _servicioService.servicio"
+					style="
+					flex-basis: 33.33%;
+					border-radius: 15px 15px 15px 15px;"
+					>
+						<div *ngIf="serv.principal"
+						class="feature-item mb-5 mb-lg-0">
+							<div class="feature-icon mb-4">
+								<i class="icofont-surgeon-alt"></i>
+							</div>
+							<h4 class="mb-3">{{serv.titulo}}</h4>
+							<p class="mb-4">{{serv.informacion}}</p>
+							<a [routerLink]="['/about']" fragment="{{serv.id}}"  class="btn btn-main btn-round-full">Leer más</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section service gray-bg" style="padding-top: 50px; padding-bottom: 0px;" id="blogId">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="">
+					<h2>Blog</h2>
+					<div class="divider-blog mx-auto my-4"></div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-laboratory text-lg"></i>
+						<h4 class="mt-3 mb-3">Laboratory services</h4>
+					</div>
+
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-heart-beat-alt text-lg"></i>
+						<h4 class="mt-3 mb-3">Heart Disease</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-tooth text-lg"></i>
+						<h4 class="mt-3 mb-3">Dental Care</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-crutch text-lg"></i>
+						<h4 class="mt-3 mb-3">Body Surgery</h4>
+					</div>
+
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-brain-alt text-lg"></i>
+						<h4 class="mt-3 mb-3">Neurology Sargery</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="service-item mb-4">
+					<div class="icon d-flex align-items-center">
+						<i class="icofont-dna-alt-1 text-lg"></i>
+						<h4 class="mt-3 mb-3">Gynecology</h4>
+					</div>
+					<div class="content">
+						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
