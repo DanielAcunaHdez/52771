@@ -3,6 +3,7 @@ import { Routes, RouterModule, ExtraOptions, Router } from '@angular/router';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 
 const routerOptions: ExtraOptions = {
@@ -15,12 +16,12 @@ const app_routes: Routes = [
   {path: 'home', component: PrincipalComponent},
   {path: 'about', component:AboutComponent},
   {path: 'faqs', component:FaqsComponent},
+  {path: 'servicios', component:ServiciosComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ]
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(app_routes, {useHash: true}),
     RouterModule.forRoot(app_routes, routerOptions)
   ],
   

@@ -10,6 +10,7 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 import { AboutComponent } from './pages/about/about.component';
 import { RouterModule } from '@angular/router';
 import { FaqsComponent } from './pages/faqs/faqs.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 
 
@@ -20,7 +21,8 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
     FooterComponent,
     PrincipalComponent,
     AboutComponent,
-    FaqsComponent
+    FaqsComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,

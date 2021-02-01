@@ -1,0 +1,35 @@
+<section *ngFor ="let serv of _servicioService.servicio; let indice=index; let impar=odd"
+class="section-servicios" id="{{serv.id}}"> 
+	<div class="container"  >
+		<div class="row" >
+
+			
+				<div *ngIf="!impar" 
+				class="col-lg-4 col-md-6">
+					<div class="doctor-img-block">
+						<img src="/assets/images/servicios/{{serv.url}}" alt="" class="img-fluid w-100">
+
+					</div>
+				</div>
+		
+
+			<div class="col-lg-8 col-md-6">
+				<div class="doctor-details mt-4 mt-lg-0">
+					<p class="text-md">{{serv.titulo}}</p>
+					<div class="divider my-4"></div>
+					<p style="text-align: justify;">{{serv.informacion_general}}</p>
+
+				</div>
+			</div>
+
+			<div *ngIf="impar" 
+			class="col-lg-4 col-md-6">
+				<div class="doctor-img-block">
+					<img src="/assets/images/servicios/{{serv.url}}" alt="" class="img-fluid w-100">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
