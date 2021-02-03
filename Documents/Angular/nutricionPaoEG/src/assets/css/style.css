@@ -86,19 +86,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   padding: 7rem 0px;
 }
 
-.btn {
-  display: inline-block;
-  font-size: 14px;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: .5px;
-  padding: .75rem 2rem;
-  font-family: "Exo", sans-serif;
-  text-transform: uppercase;
-  border-radius: 5px;
-  border: 2px solid transparent;
-  transition: all .35s ease;
-}
 
 .btn.btn-icon i {
   border-left: 1px solid rgba(255, 255, 255, 0.09);
@@ -2015,25 +2002,6 @@ a:hover {
 .second { background-color: rgba(21, 150, 144, 0.8); }
 .third { background-color: rgba(211,150,14,0.8); }
 
-.footer {
-	color: white;
-	font-size: 12px;
-	padding-right: 0;
-}
-.copyright {
-	color: #fff;
-	font-size: 11px;
-	margin-bottom: 0;
-	text-align: right;
-	padding: 30px 0;
-}
-
-.copyright a {
-	color: #fff;
-}
-.copyright a:hover {
-	color: #FF0;
-}
 
 .about_box_line { border-top: 7px solid #10a5cd; }
 .about_box_title {

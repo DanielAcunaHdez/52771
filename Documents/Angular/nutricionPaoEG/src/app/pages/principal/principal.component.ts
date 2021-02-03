@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiciosService } from '../../services/servicios.service';
+import { BlogInstagramService } from '../../services/blog-instagram.service';
 
 @Component({
   selector: 'app-principal',
@@ -8,7 +9,9 @@ import { ServiciosService } from '../../services/servicios.service';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor(public _servicioService: ServiciosService) { }
+  constructor(public _servicioService: ServiciosService,
+              public _servicioBlog: BlogInstagramService
+    ) { }
 
   ngOnInit(): void {
   }

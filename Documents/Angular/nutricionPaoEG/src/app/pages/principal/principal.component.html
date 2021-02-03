@@ -59,73 +59,24 @@
 			</div>
 		</div>
 
-		<div class="row">
-			
-			<div class="row margin-b-30">
-			
-				<div class="" style="width: 33% !important; padding-left: 15px; padding-right: 15px;">
-					<div class="box london">
-						<div class="box-icon">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-								<img src="https://instagram.fntr6-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/122160792_1434029723460217_8541673680971496113_n.jpg?_nc_ht=instagram.fntr6-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=WMjzlWMN818AX8hoj4g&tp=1&oh=3001c351e43b78d72b3a17ecd9ec1f97&oe=6041100D" sizes="10px" alt="Image" class="img-responsive">
-							</a>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+					<ng-container *ngFor ="let blog of _servicioBlog.blog">
+						<div  *ngIf="blog.principal" class="col-lg-4 col-sm-6">
+							<a class="portfolio-box" href="{{blog.url_instagram}}" target="_blank">
+								<img class="img-fluid" src="{{blog.imagen}}" alt="" />
+								<div class="portfolio-box-caption">
+									<div class="project-name">{{blog.titulo}}</div>
+								</div>
+							</a>						
 						</div>
-						<div class="info float-container">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-							
-							<div class="col-sm-12 london-title">
-								<h3 class="text-uppercase">Proin gravida nibhvel</h3>
-								<h4 class="text-uppercase">mauris vitae erat</h4>
-							</div>
-							<p style="color: #6F8BA4;">Sean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p><hr />
-						</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="" style="width: 33% !important; padding-left: 15px; padding-right: 15px;">
-					<div class="box paris">
-						<div class="box-icon">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-								<img src="https://instagram.fntr6-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/122160792_1434029723460217_8541673680971496113_n.jpg?_nc_ht=instagram.fntr6-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=WMjzlWMN818AX8hoj4g&tp=1&oh=3001c351e43b78d72b3a17ecd9ec1f97&oe=6041100D" sizes="10px" alt="Image" class="img-responsive">
-							</a>
-						</div>
-						<div class="info float-container">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-							
-							<div class="col-sm-12 london-title">
-								<h3 class="text-uppercase">Proin gravida nibhvel</h3>
-								<h4 class="text-uppercase">mauris vitae erat</h4>
-							</div>
-							<p style="color: #6F8BA4;">Sean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p><hr />
-						</a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="" style="width: 33% !important; padding-left: 15px; padding-right: 15px;">
-					<div class="box paris">
-						<div class="box-icon">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-								<img src="https://instagram.fntr6-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/122160792_1434029723460217_8541673680971496113_n.jpg?_nc_ht=instagram.fntr6-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=WMjzlWMN818AX8hoj4g&tp=1&oh=3001c351e43b78d72b3a17ecd9ec1f97&oe=6041100D" sizes="10px" alt="Image" class="img-responsive">
-							</a>
-						</div>
-						<div class="info float-container">
-							<a href="https://www.instagram.com/p/CGqVpSkpbdn/" target="_blank">
-							
-							<div class="col-sm-12 london-title">
-								<h3 class="text-uppercase">Proin gravida nibhvel</h3>
-								<h4 class="text-uppercase">mauris vitae erat</h4>
-							</div>
-							<p style="color: #6F8BA4;">Sean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p><hr />
-						</a>
-						</div>
-					</div>
-				</div>
-
-			</div> <!-- row -->
-
-
-		</div>
+					</ng-container>
+                </div>
+            </div>
+        </div>
 	</div>
 </section>
+
+<div style="margin-bottom: 30px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);"></div>

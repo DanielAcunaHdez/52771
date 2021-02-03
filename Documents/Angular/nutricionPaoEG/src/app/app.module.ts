@@ -11,6 +11,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { RouterModule } from '@angular/router';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { FormsModule } from '@angular/forms';
+import { MessageService } from './services/message.service';
 
 
 
@@ -22,15 +25,17 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
     PrincipalComponent,
     AboutComponent,
     FaqsComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule      
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
