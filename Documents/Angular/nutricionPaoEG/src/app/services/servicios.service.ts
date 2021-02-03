@@ -23,7 +23,7 @@ export class ServiciosService {
           .subscribe( (resp: any) => {
             this.servicio = resp;
             this.cargando = false;
-            console.log('servicios cargados: ', this.servicio);
+            //console.log('servicios cargados: ', this.servicio);
             resolve();
           });
 

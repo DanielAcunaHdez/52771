@@ -18,7 +18,7 @@ export class BlogInstagramService {
     this.http.get('https://nutri-pao-eg-default-rtdb.firebaseio.com/blog.json')
     .subscribe( (resp: any) => {
       this.blog = resp;
-      console.log(this.blog);
+      //console.log(this.blog);
       
     });
    

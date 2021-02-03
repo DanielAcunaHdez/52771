@@ -19,7 +19,7 @@ cargarPreguntas(){
    this.http.get('https://nutri-pao-eg-default-rtdb.firebaseio.com/preguntas.json')
    .subscribe( (resp: any) => {
      this.pregunta = resp;
-     console.log(this.pregunta);
+     //console.log(this.pregunta);
      
    });
   
